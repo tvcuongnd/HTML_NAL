@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký thông tin</title>
+    <link rel="stylesheet" type="text/css" href="lab08.css">
+</head>
+<body>
+<form action="https://youtube-api-challenger.appspot.com/member/register" method="POST" class="body-form">
+    <fieldset>
+        <legend>Thông tin cơ bản</legend>
+        <label>Tên tài khoản </label>
+        <input type="text" name="username" placeholder="Tài khoản đăng nhập" minlength="7" required class="username">
+        <label>Email </label>
+        <input type="email" name="email" placeholder="Email của bạn" required class="email">
+        <label>Mật khẩu </label>
+        <input type="password" name="password" placeholder="Mật khẩu đăg nhập" minlength="7" required class="password">
+        <label>Xác nhận mật khẩu </label>
+        <input type="password" name="password" placeholder="Xác nhận mật khẩu" minlength="7" required class="password">
+    </fieldset>
+    <fieldset>
+        <legend>Thông tin chi tiết</legend>
+        <label>Họ và Tên </label>
+        <input type="text" name="fullName" placeholder="Họ và tên của bạn" class="fullName">
+        <label>Ngày sinh </label>
+        <input type="date" name="birthDay" class="birthDay">
+        <br>
+        <label for="gender">Giới tính</label>
+        <input type="radio" name="gender" value="1">Nam
+        <input type="radio" name="gender" value="0">Nữ
+        <br>
+        <label class="Sothich">Sở thích</label>
+            <input type="checkbox" name="favourite"> Thể thao
+            <input type="checkbox" name="favourite"> Xem phim
+            <input type="checkbox" name="favourite"> Nghe nhạc
+            <input type="checkbox" name="favourite"> Đọc sách
+        <br>
+        <label> Ảnh đại diện  </label>
+        <input type="file" name="avatar">
+        <br>
+        <label>Giới thiệu về bản thân </label>
+        <textarea name="comment" rows="4" cols="50"></textarea>
+    </fieldset>
+ <input type="submit" value="Đăng ký" class="sb">
+ <input type="reset" value="Làm lại" class="rs">
+</form>
+</body>
+</html>

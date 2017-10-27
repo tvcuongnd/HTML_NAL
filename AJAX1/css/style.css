@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+.form1 {
+	width: 300px;
+	margin: auto;
+	line-height: 50px;
+}
+
+fieldset{
+	border-radius: 5px;
+}
+label {
+}
+input {
+	width: 150px;
+	border-radius: 5px;
+}
+button {
+	border-radius: 5px;
+	background-color: yellow;
+}
